@@ -30,6 +30,36 @@
       </div>
     </div>
 
+    <div class="sidebar" ng-controller="SidebarCtrl as sidebar">
+      <div class="sidebar-company">
+        <h3 class="name">Cool Society Inc</h3>
+        <h4 class="est">(2017)</h4>
+      </div>
+      <div class="sidebar-links">
+        <ul>
+          <li>
+            <i class="link-icon fa fa-home fa-lg" aria-hidden="true"></i>
+            Dashboard
+          </li>
+          <li>
+            <i class="link-icon fa fa-users fa-lg" aria-hidden="true"></i>
+            Team Directory
+          </li>
+          <li>
+            <i class="link-icon fa fa-pie-chart fa-lg" aria-hidden="true"></i>
+            Statistics
+          </li>
+          <li>
+            <i class="link-icon fa fa-building fa-lg" aria-hidden="true"></i>
+            Company Details
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar-buttons">
+        <button class="contact">CONTACT</button>
+      </div>
+    </div>
+
     <div class="container">
       <div ng-view=""></div>
     </div>
@@ -78,6 +108,8 @@
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/sidebar.js"></script>
+    <script src="scripts/controllers/dashboard.js"></script>
     <!-- endbuild -->
     <script src="https://use.fontawesome.com/6efd996c02.js"></script>
   </body>
