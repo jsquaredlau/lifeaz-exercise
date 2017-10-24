@@ -3,22 +3,29 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-html, body {margin: 0; height: 100%; overflow: hidden}
+// body {margin: 0; height: 100%; overflow: hidden}
+body {
+    overflow: auto;
+}
 
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
 
   .navbar {
-      height: 70px;
+      position: fixed;
+      top: 0;
+      height: 75px;
       width: 100%;
-      color: white;
+      background-color: white;
       margin-bottom: 0px;
+      border-radius: 0px;
       display: inline-block;
+      z-index: 200;
 
       &-logo {
           display: inherit;
-          height: inherit;
+          height: 70px;
           float: left;
           width: auto;
           margin-left: 10px;

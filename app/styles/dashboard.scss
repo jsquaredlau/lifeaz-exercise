@@ -1,16 +1,17 @@
 .dashboard {
     display: inline-block;
-    width: calc(100vw - 300px);
-    overflow: auto;
+    width: 100%;
+    overflow-x: scroll;
     .graphs {
         width: inherit;
-        height: 400px;
+        height: 300px;
         background-color: blue;
     }
     .options {
         width: inherit;
         .option-row {
-            margin-top: 30px;
+            margin-top: 25px;
+            margin-bottom: 25px;
             text-align: center;
             width: inherit;
             display: inline-block;
@@ -19,12 +20,17 @@
                 display: inline-block;
                 margin-left: 50px;
                 margin-right: 50px;
+                // margin: 50px;
                 height: 250px;
                 width: 250px;
                 background-color: white;
 
                 /* Add shadows to create the "card" effect */
                 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                // border-width: 1px;
+                // border-style: solid;
+                // border-color: gray;
+                border-radius: 5%;
                 transition: 0.3s;
                 position: relative;
 
@@ -51,6 +57,12 @@
                         border-style: solid;
                         border-width: thin;
                         background-color: white;
+                    }
+
+                    button:hover {
+                        background-color: green;
+                        color: white;
+                        transition: 0.3s;
                     }
                 }
             }
