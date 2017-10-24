@@ -8,12 +8,10 @@
  * Controller of the lifeazDemoApp
  */
 angular.module('lifeazDemoApp')
-  .controller('SidebarCtrl', function($scope) {
+  .controller('SidebarCtrl', function() {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-
-    $scope.testing = "well fk me";
   });

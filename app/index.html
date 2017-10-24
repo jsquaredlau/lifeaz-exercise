@@ -12,6 +12,7 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
     <!-- endbuild -->
   </head>
   <body ng-app="lifeazDemoApp">
@@ -27,36 +28,6 @@
           <img class="avatar" src="http://via.placeholder.com/60x60">
           <i class="dropdown fa fa-caret-down fa-lg" aria-hidden="true"></i>
         </div>
-      </div>
-    </div>
-
-    <div class="sidebar" ng-controller="SidebarCtrl as sidebar">
-      <div class="sidebar-company">
-        <h3 class="name">Cool Society Inc</h3>
-        <h4 class="est">(2017)</h4>
-      </div>
-      <div class="sidebar-links">
-        <ul>
-          <li>
-            <i class="link-icon fa fa-home fa-lg" aria-hidden="true"></i>
-            DASHBOARD
-          </li>
-          <li>
-            <i class="link-icon fa fa-users fa-lg" aria-hidden="true"></i>
-            TEAM DIRECTORY
-          </li>
-          <li>
-            <i class="link-icon fa fa-pie-chart fa-lg" aria-hidden="true"></i>
-            STATISTICS
-          </li>
-          <li>
-            <i class="link-icon fa fa-building fa-lg" aria-hidden="true"></i>
-            COMPANY DETAILS
-          </li>
-        </ul>
-      </div>
-      <div class="sidebar-buttons">
-        <button class="contact">CONTACT</button>
       </div>
     </div>
 
@@ -82,6 +53,9 @@
       ga('send', 'pageview');
     </script>
 
+    <!-- <script src="../node_modules/chart.js/Chart.min.js"></script>
+    <script src="../node_modules/angular-chart.js/dist/angular-chart.min.js"></script> -->
+
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -93,6 +67,8 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/chart.js/dist/Chart.js"></script>
+    <script src="bower_components/angular-chart.js/dist/angular-chart.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
