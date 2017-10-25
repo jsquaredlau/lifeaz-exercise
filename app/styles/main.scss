@@ -1,69 +1,81 @@
-$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
-// bower:scss
-@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-// endbower
-
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/"; // bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss"; // endbower
 // body {margin: 0; height: 100%; overflow: hidden}
-body {
-    overflow: auto;
-}
 
+body {
+  overflow: auto;
+}
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
 
   .navbar {
-      position: fixed;
-      top: 0;
-      height: 75px;
-      width: 100%;
-      background-color: white;
-      margin-bottom: 0px;
-      border-radius: 0px;
-      display: inline-block;
-      z-index: 200;
+    position: fixed;
+    top: 0;
+    height: 75px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 0;
+    border-radius: 0;
+    display: inline-block;
+    z-index: 200;
 
-      &-logo {
-          display: inherit;
-          height: 70px;
-          float: left;
-          width: auto;
-          margin-left: 10px;
-          background-color: red;
+    &-logo {
+      display: inherit;
+      height: 70px;
+      float: left;
+      width: auto;
+      margin-left: 10px;
+      background-color: red;
 
-          .title-img {
-              height: inherit;
-          }
+      .title-img {
+        height: inherit;
+      }
+    }
+
+    &-notifications {
+      display: inherit;
+      float: right;
+      height: 70px;
+      text-align: center;
+      padding-top: calc((70px - 2em)/2);
+      padding-bottom: calc((70px - 2em)/2);
+      margin-right: 15px;
+      position: relative;
+
+      &-badge {
+        height: 20px;
+        width: 20px;
+        border-radius: 10px;
+        z-index: 100;
+        text-align: center;
+        background-color: red;
+        position: absolute;
+        bottom: calc((70px - 2.5em)/2);
+        right: 0;
+        color: white;
+      }
+    }
+
+    &-account {
+      display: inherit;
+      height: inherit;
+      float: right;
+      width: 100px;
+
+      .avatar {
+        border-radius: 50%;
+        display: inline-block;
+        padding-top: 5px;
+        padding-bottom: 5px;
       }
 
-       &-search {
-          display: inherit;
-          height: inherit;
-          float:left;
-          width: auto;
-          background-color: blue;
-       }
-
-       &-account {
-          display: inherit;
-          height: inherit;
-          float: right;
-          width: 100px;
-
-          .avatar {
-              border-radius: 50%;
-              display: inline-block;
-              padding-top: 5px;
-              padding-bottom: 5px;
-          }
-
-          .dropdown {
-              margin-left: 5px;
-              color: black;
-          }
-       }
+      .dropdown {
+        margin-left: 5px;
+        color: black;
+      }
+    }
   }
-
   /* Make the masthead heading the same height as the navigation */
   h3 {
     margin-top: 0;
@@ -74,77 +86,71 @@ body {
 }
 
 .sidebar {
-    position: relative;
-    height: calc(100vh - 70px);
-    float: left;
-    width: 300px;
-    background-color: #4D98D8;
-    color: white;
+  position: relative;
+  height: calc(100vh - 70px);
+  float: left;
+  width: 300px;
+  background-color: #4D98D8;
+  color: white;
 
-    &-company {
-        margin-top: 50px;
-        margin-bottom: 100px;
-        text-align: center;
+  &-company {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
 
-        .name {
+    .name {}
+
+    .est {}
+  }
+
+  &-links {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        font-size: 16px;
+        margin-bottom: 20px;
+
+        .link-icon {
+          margin-right: 5px;
+          width: 30px;
         }
-        .est {
-        }
+      }
     }
+  }
 
-    &-links {
-        padding-left: 30px;
-        padding-right: 30px;
+  &-buttons {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 20px;
 
-        ul {
-            list-style: none;
-            padding: 0;
-
-            li {
-                font-size: 16px;
-                margin-bottom: 20px;
-
-                .link-icon {
-                    margin-right: 5px;
-                    width: 30px
-                }
-            }
-        }
+    .contact {
+      width: 200px;
+      height: 40px;
+      margin: auto;
+      text-align: center;
+      background-color: #4D98D8;
+      border-radius: 50px;
+      border-color: white;
+      border-width: thin;
+      border-style: solid;
     }
-
-    &-buttons {
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        bottom: 20px;
-
-        .contact {
-            width: 200px;
-            height: 40px;
-            margin: auto;
-            text-align: center;
-            background-color: #4D98D8;
-            border-radius: 50px;
-            border-color: white;
-            border-width: thin;
-            border-style: solid;
-        }
-    }
+  }
 }
 
 .lifeaz-admin {
-    background-color: #ECF0F1;
+  background-color: #ECF0F1;
 }
-
 /* Custom page footer */
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
-
-
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-
-}
+@media screen and (min-width: 768px) {}
