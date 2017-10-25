@@ -18,9 +18,11 @@
 
   &-header {
     width: 100%;
+    margin-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
 
     .welcome-message {
-      height: 80px;
       font-size: 30px;
       font-weight: 600;
     }
@@ -43,8 +45,14 @@
 
       input:focus {
         border-bottom: 4px solid black;
-        // transition: all 0.3s ease-out;
+        transition: all 0.2s;
       }
+    }
+
+    .section-heading {
+      margin-top: 60px;
+      font-size: 30px;
+      font-weight: 400px;
     }
   }
 
@@ -76,8 +84,13 @@
         position: relative;
 
         &-icon {
-          margin-top: 10%;
-          height: 50%;
+          margin-top: 20%;
+          margin-bottom: 5%;
+
+          .flat-icon {
+            width: 70px;
+            height: 70px;
+          }
         }
 
         &-text {
@@ -89,7 +102,7 @@
           position: absolute;
           text-align: center;
           width: 100%;
-          bottom: 10px;
+          bottom: 20px;
 
           button {
             border-radius: 50px;
@@ -101,7 +114,8 @@
           }
 
           button:hover {
-            background-color: green;
+            background-color: #2ECC71;
+            border-color: #2ECC71;
             color: white;
             transition: 0.3s;
           }

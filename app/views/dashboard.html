@@ -32,16 +32,24 @@
 <div class="dashboard">
   <div class="dashboard-header">
     <div class="welcome-message">
-      Welcome back John Doe.
+      Welcome back
+      {{ username }}.
     </div>
     <div class="search">
       <input placeholder="What can we help you find ?"/>
+    </div>
+    <div class="section-heading">
+      {{ companyName }}'s (
+      {{ creationDate }}
+      ) Dashboard
     </div>
   </div>
   <div class="options">
     <div class="option-row">
       <div class="menu-item">
-        <div class="menu-item-icon"></div>
+        <div class="menu-item-icon">
+          <img class="flat-icon" src="images/team.svg"/>
+        </div>
         <div class="menu-item-text">
           Team Directory
         </div>
@@ -50,18 +58,22 @@
         </div>
       </div>
       <div class="menu-item">
-        <div class="menu-item-icon"></div>
+        <div class="menu-item-icon">
+          <img class="flat-icon" src="images/game.svg"/>
+        </div>
         <div class="menu-item-text">
-          Team Directory
+          Game Settings
         </div>
         <div class="menu-item-button">
           <button>GO</button>
         </div>
       </div>
       <div class="menu-item">
-        <div class="menu-item-icon"></div>
+        <div class="menu-item-icon">
+          <img class="flat-icon" src="images/company.svg"/>
+        </div>
         <div class="menu-item-text">
-          Team Directory
+          Company Details
         </div>
         <div class="menu-item-button">
           <button>GO</button>
@@ -70,27 +82,33 @@
     </div>
     <div class="option-row">
       <div class="menu-item">
-        <div class="menu-item-icon"></div>
+        <div class="menu-item-icon">
+          <img class="flat-icon" src="images/payment.svg"/>
+        </div>
         <div class="menu-item-text">
-          Team Directory
+          Payment
         </div>
         <div class="menu-item-button">
           <button>GO</button>
         </div>
       </div>
       <div class="menu-item">
-        <div class="menu-item-icon"></div>
+        <div class="menu-item-icon">
+          <img class="flat-icon" src="images/documentation.svg"/>
+        </div>
         <div class="menu-item-text">
-          Team Directory
+          Documentation
         </div>
         <div class="menu-item-button">
           <button>GO</button>
         </div>
       </div>
       <div class="menu-item">
-        <div class="menu-item-icon"></div>
+        <div class="menu-item-icon">
+          <img class="flat-icon" src="images/contact.svg"/>
+        </div>
         <div class="menu-item-text">
-          Team Directory
+          Contact
         </div>
         <div class="menu-item-button">
           <button>GO</button>

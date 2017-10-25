@@ -15,6 +15,8 @@ angular.module('lifeazDemoApp')
       'Karma'
     ];
 
-    $scope.labels = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-    $scope.data = [300, 500, 100];
+    $scope.username = 'John Doe';
+    $scope.companyName = 'Cool Society Inc';
+    $scope.creationDate = 2017;
+
   });
