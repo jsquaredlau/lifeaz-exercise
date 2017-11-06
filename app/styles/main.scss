@@ -1,7 +1,6 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/"; // bower:scss
-@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss"; // endbower
-// body {margin: 0; height: 100%; overflow: hidden}
-
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
 body {
   overflow: auto;
 }
