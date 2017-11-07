@@ -41,8 +41,5 @@
   "scripts": {
     "test": "karma start test/karma.conf.js"
   },
-  "dependencies": {
-    "angular-chart.js": "^1.1.1",
-    "chart.js": "^2.7.0"
-  }
+  "dependencies": {}
 }

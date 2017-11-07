@@ -28,9 +28,30 @@
           <img class="title-img" src="images/logo_lifeaz_bspp.jpg">
         </div>
 
-        <div class="navbar-account">
+        <div class="navbar-account" ng-controller="NavbarCtrl" ng-click="menuActive = !menuActive">
           <img class="avatar" src="images/account.svg">
-          <i class="dropdown fa fa-caret-down fa-lg" aria-hidden="true"></i>
+          <div class="menu" ng-hide="!menuActive">
+            <div class="menu-profile">
+              <img class="avatar" src="images/account.svg">
+              <div class="info">
+                <div class="name">{{ currentUser }}</div>
+              </div>
+            </div>
+            <div ng-repeat="company in companies" class="menu-item" ng-click="setActiveCompany(company)">
+              <div class="icon">
+                <div class="icon-inner"></div>
+              </div>
+              <div class="account">
+                <div class="company">
+                  <div class="company-inner">{{ company.companyName }}</div>
+                </div>
+                <div class="name">
+                  <div class="name-inner">{{ company.username }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <i class="dropdown fa fa-caret-down fa-lg" aria-hidden="true"></i> -->
         </div>
         <div class="navbar-notifications">
           <div class="navbar-notifications-badge">4</div>
@@ -78,6 +99,8 @@
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/dashboard.js"></script>
+    <script src="scripts/controllers/navbar.js"></script>
+    <script src="scripts/services/account.js"></script>
     <!-- endbuild -->
     <script src="https://use.fontawesome.com/6efd996c02.js"></script>
   </body>

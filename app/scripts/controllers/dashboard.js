@@ -8,15 +8,12 @@
  * Controller of the lifeazDemoApp
  */
 angular.module('lifeazDemoApp')
-  .controller('DashboardCtrl', function($scope) {
+  .controller('DashboardCtrl', function($scope, account) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
 
-    $scope.username = 'John Doe';
-    $scope.companyName = 'Cool Society Inc';
-    $scope.creationDate = 2017;
-
+    $scope.account = account.getAccount();
   });
