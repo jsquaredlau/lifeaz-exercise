@@ -17,7 +17,7 @@ angular.module('lifeazDemoApp')
 
     // $http.get("http://localhost/app_dev.php/companies?page=1")
     //   .then(function(response) {
-    //     console.log(response);
+    //     $scope.companies = response;
     //   });
 
     $scope.currentUser = 'John Doe';
