@@ -5,6 +5,7 @@ version 0.16.0.
 
 ## Build & development
 
+Run `npm install` and `bower install` to install project dependencies.
 Run `grunt` for building and `grunt serve` for preview.
 
 ## Testing
