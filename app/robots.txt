@@ -2,3 +2,5 @@
 
 User-agent: *
 Disallow:
+
+I WANNA BE THE VERY BEST
