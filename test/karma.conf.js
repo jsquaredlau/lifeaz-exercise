@@ -1,8 +1,6 @@
 // Karma configuration
 // Generated on 2017-10-23
 
-//VIM SUCKS
-
 module.exports = function(config) {
   'use strict';
 
