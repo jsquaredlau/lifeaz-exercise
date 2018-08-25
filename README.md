@@ -1,3 +1,5 @@
+(Formally a programming task for a internship application. Now used as a playground for teaching git)
+
 # lifeaz-demo
 
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
